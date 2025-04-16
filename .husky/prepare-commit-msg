@@ -1,0 +1,8 @@
+#!/bin/sh
+. "$(dirname "$0")/_/husky.sh"
+
+# Ejecuta commitizen si quieres
+npx --no-install git-cz || true
+
+# Ejecuta tu script personalizado de Node.js
+node "$(dirname "$0")/commit-assistant.js"
