@@ -1,5 +1,3 @@
-#!/bin/sh
-. "$(dirname "$0")/_/husky.sh"
 
 # Ejecuta commitizen si quieres
 npx --no-install git-cz || true
