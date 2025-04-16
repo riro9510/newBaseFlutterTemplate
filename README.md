@@ -10,7 +10,7 @@ This is the base I use to kick off professional Flutter apps with production-rea
 - ✅ Clean architecture separation (UI, logic, data)
 - ✅ Scalable folder structure
 - ✅ Pre-configured Git hooks (format, analyze, test)
-- ✅ Custom CLI scripts (rename project, create folders)
+- ✅ Custom CLI scripts (init repo, create folders)
 - ✅ Flutter best practices from day one
 
 ---
@@ -49,26 +49,30 @@ flutter pub global activate rename
 flutter pub global run rename --appname "Your App Name"
 flutter pub global run rename --bundleId com.yourcompany.yourapp
 
-### 🧙 Step 2 – Generate folder structure
+### 🧙 Step 2 – Initialize project
+This command installs dependencies, sets up Node, installs Husky, generates folders, etc.
 
-dart scripts/init_structure.dart
+bash init.sh
 
-### 📦 Step 3 – Install dependencies
-
-flutter pub get
-
-### 🔗 Step 4 – Sync with your own Git repo
+### 🔗 Step 3 – Sync with your own Git repo
 Create a new repository on GitHub (or your platform of choice).
 Then replace the origin of this template:
 
 git remote remove origin
 git remote add origin https://yourgitprovider.com/your-user/your-repo.git
 
-### Always remember to Run default checks
-flutter format .        # Format all the code
-flutter analyze         # Useful to catch potential issues early
-flutter test            # Run your own tests (once added)
+### ✅ Step 4 – Use Git like a pro
+This repo comes with pre-configured Git hooks:
 
+Auto-format your code before each commit
+
+Run flutter analyze
+
+Block broken commits early
+
+If you ever need to skip the commit assistant, you can use:
+
+git commit --no-verify
 
 💬 Final words
 
@@ -76,5 +80,10 @@ This project is meant to save you time, bring clarity and scalability from day o
 and impress recruiters or clients with how quickly you can set things up.
 
 "Have been a pleasure to give you a kick-start in this — it's time to fly." 🛫
+
+Cheers,  
+**Ricardo Ramos Olivares** (`riro`)  
+Template crafted to help devs launch faster and smarter.
+
 
 ```bash

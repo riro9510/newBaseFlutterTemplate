@@ -16,7 +16,7 @@ module.exports = {
       {
         type: 'input',
         name: 'version',
-        message: '¿Versión del proyecto? (ej. 1.0.0)'
+        message: 'Proyect Version? (ej. 1.0.0)'
       },
       {
         type: 'list',

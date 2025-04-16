@@ -1,2 +1,8 @@
 #!/bin/sh
+echo "✨ Formatting code..."
+dart format .
+flutter analyze || true
+
+echo "📦 AAdding formated code..."
+git add .
 exec < /dev/tty && npx git-cz --hook || true
