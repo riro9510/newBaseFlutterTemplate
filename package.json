@@ -1,0 +1,37 @@
+{
+  "name": "newbaseflutterproject",
+  "version": "1.0.0",
+  "description": "A powerful, scalable, and developer-friendly Flutter starter template.   This is the base I use to kick off professional Flutter apps with production-ready practices and tools baked in.",
+  "main": "index.js",
+  "directories": {
+    "lib": "lib",
+    "test": "test"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "commit": "cz",
+    "prepare": "husky install"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/riro9510/newBaseFlutterProject.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/riro9510/newBaseFlutterProject/issues"
+  },
+  "homepage": "https://github.com/riro9510/newBaseFlutterProject#readme",
+  "devDependencies": {
+    "@commitlint/cli": "^19.8.0",
+    "@commitlint/config-conventional": "^19.8.0",
+    "commitizen": "^4.3.1",
+    "husky": "^9.1.7"
+  },
+  "config": {
+    "commitizen": {
+      "path": "./node_modules/cz-conventional-changelog"
+    }
+  }
+}
