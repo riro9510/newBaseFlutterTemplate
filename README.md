@@ -55,9 +55,6 @@ Run flutter analyze
 
 Block broken commits early
 
-If you ever need to skip the commit assistant, you can use:
-
-git commit --no-verify
 
 # 💬 Commit Format
 Tired of messy commit messages? Or maybe you're still seeing things like fix stuff or yo arreglé eso que rompí jeje in your team history?
@@ -82,7 +79,6 @@ Your Git setup includes hooks that ensure consistent code quality:
 
 Pre-commit hooks: Auto-formatting and linting checks before committing changes.
 
-If you need to manually run the hooks, you can do so with:
 
 npm run lint
 npm run format
